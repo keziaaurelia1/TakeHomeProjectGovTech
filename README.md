@@ -17,6 +17,6 @@ Mock App : `mockgen -package=mock -source=internal/app/$(SUBDOMAIN)/app/app.go -
 
 ## Notes
 
-Dalam pembuatan project digunakan `wire` yang merupakan Dependency Injection untuk mempermudah pengaturan depedency.
+Dalam pembuatan project digunakan `wire` yang merupakan Dependency Injection untuk mempermudah pengaturan depedency. Wire ini digunakan untuk mempermudah mengatasi permasalahan dependency. Sehingga saat pembuatan variabel jika terdapat variabel a yang memiliki dependency dengan variabel b maka variabel b akan dibuat terlebih dahulu yang dibutuhkan oleh a kemudian baru membuat a. Dengan begitu wire ini akan mengatasi permasalahan dependency yang mungkin terjadi.
 
-Digunakan `squirrel` untuk mempermudah pembuatan SQL queries
+Digunakan `squirrel` untuk mempermudah pembuatan SQL queries. Squirrel juga memudahkan dalam membaca code sehingga dapat dimengerti dengan lebih cepat.
